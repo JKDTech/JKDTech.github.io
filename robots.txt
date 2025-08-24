@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jkdtech.github.io/sitemap.xml
+
+# Específico para buscadores
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Bloquear archivos no públicos
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /.git/
+Disallow: /*.md$
+
+# Permitir recursos importantes
+Allow: /assets/img/
+Allow: /assets/css/estilos_modernos.css
+Allow: /assets/css/project-placeholders.css
+Allow: /assets/js/main_moderno.js
+
+# Crawl-delay para no sobrecargar
+Crawl-delay: 1

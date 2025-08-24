@@ -1,0 +1,45 @@
+# ==============================================
+# JKD Tech Portfolio - .gitignore  
+# ==============================================
+
+# Archivos privados y documentación interna
+backup_archivos_no_publicar/
+*.pdf
+.claude/
+docs/DOMAIN_SETUP_GUIDE.md
+docs/EMAIL_SETUP_GUIDE.md
+
+# Archivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.temp
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de entorno
+.env
+.env.local
+.env.production
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Personal notes
+notes.md
+TODO.md
+PRIVATE.md
