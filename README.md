@@ -2,7 +2,7 @@
 
 [![Website](https://img.shields.io/badge/Website-jkdtech.cl-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://jkdtech.cl)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://jkdtech.github.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Copyright](https://img.shields.io/badge/Copyright-All%20Rights%20Reserved-red?style=for-the-badge)](https://jkdtech.cl)
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -312,12 +312,26 @@ git push origin main → GitHub Actions → Build → Deploy → Live
 
 ## 📄 **Licencia & Uso**
 
-Este proyecto está bajo **Licencia MIT** - ver [LICENSE](LICENSE) para detalles.
+Este proyecto es un **portafolio personal** y está protegido por derechos de autor.
 
-**Uso Comercial**: ✅ Permitido  
-**Modificación**: ✅ Permitido  
-**Distribución**: ✅ Permitida  
-**Uso Privado**: ✅ Permitido
+### 🚫 **Restricciones de Uso:**
+- **Uso Comercial**: ❌ No permitido sin autorización
+- **Distribución**: ❌ No permitida sin autorización  
+- **Modificación para uso comercial**: ❌ No permitida
+- **Uso de marca "JKD Tech"**: ❌ Marca registrada protegida
+- **Uso de información personal**: ❌ Contenido propietario
+
+### ✅ **Uso Permitido:**
+- **Inspiración y referencia**: Para fines educativos únicamente
+- **Fork para uso personal**: Sin redistribución ni uso comercial
+- **Estudio del código**: Para aprendizaje personal
+
+### 📞 **Solicitar Autorización:**
+Para cualquier uso comercial o redistribución, contactar:
+- **Email**: [jonathan@jkdtech.cl](mailto:jonathan@jkdtech.cl)
+- **WhatsApp**: [+56 9 6907 6188](https://wa.me/56969076188)
+
+**⚖️ Copyright © 2025 Jonathan Moya - JKD Tech. Todos los derechos reservados.**
 
 ## 🤝 **Contribuciones & Colaboraciones**
 
