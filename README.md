@@ -15,6 +15,7 @@
 ## ✨ Características Destacadas
 
 ### 🎨 **Diseño Moderno y Profesional (2025)**
+
 - **Glassmorphism UI** con backdrop-filter y efectos translúcidos
 - **Mobile-First Responsive** optimizado para 320px-8000px+
 - **Navbar Inteligente** con menú colapsible y efectos hover
@@ -24,6 +25,7 @@
 - **PWA Optimizada** con manifest y service worker
 
 ### 📱 **Experiencia de Usuario Superior**
+
 - **Navegación Ultra-Suave** con scroll-behavior optimizado
 - **Formulario de Contacto Avanzado** con validación instantánea
 - **WhatsApp Integration** con mensaje predefinido profesional
@@ -33,6 +35,7 @@
 - **Accesibilidad WCAG 2.1** con contraste optimizado
 
 ### 🛠️ **Stack Tecnológico Moderno**
+
 - **Frontend**: HTML5 semántico, CSS3 Grid/Flexbox, JavaScript ES6+
 - **Framework**: Bootstrap 5.3.2 con customización avanzada
 - **Iconografía**: Font Awesome 6.5.1 optimizado
@@ -42,14 +45,18 @@
 
 ## 🌐 **Ver en Vivo**
 
-### 🔗 **Sitio Principal**: [**jkdtech.cl**](https://jkdtech.cl) 
+### 🔗 **Sitio Principal**: [**jkdtech.cl**](https://jkdtech.cl)
+
 ### 🔗 **GitHub Pages**: [**jkdtech.github.io**](https://jkdtech.github.io/)
+
 ### 📧 **Email Profesional**: [jonathan@jkdtech.cl](mailto:jonathan@jkdtech.cl)
+
 ### 💬 **WhatsApp Directo**: [Chat Profesional](https://wa.me/56969076188?text=Hola%20Jonathan%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar)
 
 ## 📋 **Secciones del Portafolio**
 
 ### 1. 🏠 **Hero Section Interactiva**
+
 - **Presentación dinámica** con typing effect personalizado
 - **Code Animation** con líneas de código flotantes
 - **Floating Icons** con animaciones escalonadas y z-index optimizado
@@ -57,26 +64,30 @@
 - **Mobile-First Design** que se adapta perfectamente a todos los dispositivos
 
 ### 2. 👨‍💻 **Sobre Mí - Timeline Evolutiva**
+
 - **Historia profesional** desde estudiante hasta CEO de JKD Tech
 - **Habilidades técnicas** con visualización interactiva
 - **Soft skills** y competencias de liderazgo
 - **Filosofía tecnológica** y visión de la IA en el futuro
 
 ### 3. 📅 **Mi Evolución Profesional**
+
 - **Timeline interactiva** (Dic 2020 - Actualidad)
 - **Hitos importantes**: Universidad → Freelancer → Emprendedor IA
 - **Proyectos destacados** en cada etapa de crecimiento
 - **Certificaciones y logros** profesionales
 
 ### 4. 🚀 **Proyectos Destacados con Cases Studies**
+
 - **🤖 JKDTech AI Platform**: Plataforma revolucionaria con múltiples IAs
-- **🌐 JKD Tech Corporate**: Sitio profesional con tecnología de vanguardia  
+- **🌐 JKD Tech Corporate**: Sitio profesional con tecnología de vanguardia
 - **📱 TriviaApp Android**: App educativa con IA + Gamificación (Play Store)
 - **💼 Corporate Template**: Solución B2B basada en cliente real
 - **🧠 Trivy Prep**: Web app inteligente con Google Genkit AI
 - **⚡ Automatizaciones IA**: Scripts y soluciones personalizadas
 
 ### 5. ⚡ **Tecnologías y Certificaciones**
+
 - **Frontend Moderno**: React 18, Next.js 14, TypeScript, Tailwind CSS
 - **Backend Robusto**: Node.js, Python, Java, Spring Boot, Firebase
 - **AI/ML Stack**: OpenAI GPT-4, Google Genkit, Gemini API, LangChain
@@ -84,12 +95,14 @@
 - **15+ Certificaciones** en tecnologías modernas y metodologías ágiles
 
 ### 6. 🏢 **JKD Tech - Mi Empresa**
+
 - **Visión corporativa** y servicios especializados
 - **Estadísticas reales** de proyectos y clientes
 - **Testimonios verificados** de clientes satisfechos
 - **Roadmap tecnológico** y planes de expansión
 
 ### 7. 📧 **Contacto Profesional Avanzado**
+
 - **Formulario inteligente** con validación en tiempo real
 - **WhatsApp Business** con mensaje predefinido profesional
 - **Email corporativo** jonathan@jkdtech.cl
@@ -98,12 +111,14 @@
 ## 🚀 **Instalación y Uso**
 
 ### **Clonar el Repositorio**
+
 ```bash
 git clone https://github.com/JKDTech/JKDTech.github.io.git
 cd JKDTech.github.io
 ```
 
 ### **Ejecutar Localmente**
+
 ```bash
 # Opción 1: Live Server (VS Code) - Recomendado
 # Instalar extensión "Live Server" y click derecho > "Open with Live Server"
@@ -112,7 +127,7 @@ cd JKDTech.github.io
 python -m http.server 8000
 # Abrir: http://localhost:8000
 
-# Opción 3: Node.js Server  
+# Opción 3: Node.js Server
 npx serve .
 # Abrir: http://localhost:3000
 
@@ -120,18 +135,12 @@ npx serve .
 php -S localhost:8000
 ```
 
-### **⚙️ Configuración de Dominio Personalizado**
-Si quieres implementar tu propio dominio:
-
-1. **Seguir guía completa**: [`docs/DOMAIN_SETUP_GUIDE.md`](docs/DOMAIN_SETUP_GUIDE.md)
-2. **Configurar DNS** con registros A y CNAME
-3. **Configurar email profesional**: [`docs/EMAIL_SETUP_GUIDE.md`](docs/EMAIL_SETUP_GUIDE.md)
-
 ### **📧 Personalizar Información de Contacto**
+
 1. **Actualizar email y teléfono** en `index.html`
 2. **Configurar WhatsApp** con tu número:
    ```html
-   <a href="https://wa.me/TU_NUMERO?text=Mensaje%20personalizado">
+   <a href="https://wa.me/TU_NUMERO?text=Mensaje%20personalizado"></a>
    ```
 3. **Cambiar enlaces** de redes sociales en footer
 
@@ -176,8 +185,9 @@ JKDTech.github.io/
 ## 🎯 **Características Técnicas Avanzadas (2025)**
 
 ### **🚀 Performance & Core Web Vitals**
+
 - ⚡ **Lighthouse Score**: 98+ en todas las métricas
-- 🎨 **Mobile-First CSS**: 1800+ líneas optimizadas sin frameworks pesados  
+- 🎨 **Mobile-First CSS**: 1800+ líneas optimizadas sin frameworks pesados
 - 🖼️ **Image Optimization**: WebP format y lazy loading inteligente
 - 📦 **Zero Bundle Size**: Sin dependencias JavaScript externas
 - 🔄 **Service Worker**: PWA con cache estratégico offline-first
@@ -186,6 +196,7 @@ JKDTech.github.io/
 - 📏 **CLS < 0.05**: Cumulative Layout Shift casi nulo
 
 ### **🎨 Design System & UX**
+
 - 🔮 **Glassmorphism UI**: backdrop-filter y efectos translúcidos avanzados
 - 📱 **Mobile-First**: Breakpoints desde 320px hasta 8000px+
 - 🌊 **Smooth Animations**: 60fps CSS transforms sin JavaScript
@@ -194,10 +205,11 @@ JKDTech.github.io/
 - 🎨 **Color System**: Variables CSS con soporte dark/light themes
 
 ### **🔧 Responsive Architecture**
+
 ```css
 /* Breakpoints System */
 Mobile Base:    320px+  (hero optimizado)
-Small Mobile:   375px+  (contenido expandido)  
+Small Mobile:   375px+  (contenido expandido)
 Large Mobile:   425px+  (elementos mayores)
 Tablet Portrait: 768px+ (layout híbrido)
 Tablet Landscape: 992px+ (desktop parcial)
@@ -207,6 +219,7 @@ Large Desktop:  1440px+ (contenido expandido)
 ```
 
 ### **🛡️ Security & SEO**
+
 - 🔒 **HTTPS Enforced**: SSL/TLS 1.3 con GitHub Pages
 - 🛡️ **CSP Headers**: Content Security Policy configurado
 - 🔐 **Form Security**: Validación client-side y sanitización
@@ -224,14 +237,16 @@ Large Desktop:  1440px+ (contenido expandido)
 </div>
 
 ### **🌟 Experiencia y Logros (2025)**
+
 - ✅ **30+ proyectos** de IA y desarrollo completados
-- ✅ **8+ clientes corporativos** con soluciones implementadas  
+- ✅ **8+ clientes corporativos** con soluciones implementadas
 - ✅ **4+ años** de experiencia en tecnología
 - ✅ **15+ certificaciones** en tecnologías modernas
 - ✅ **100%** tasa de satisfacción del cliente
 - 🏆 **JKD Tech**: Empresa líder en automatización con IA
 
 ### **🛠️ Servicios Especializados**
+
 - 🤖 **Desarrollo de IA**: Plataformas con OpenAI, Gemini, Claude API
 - 📱 **Apps Móviles**: Android nativo (Kotlin) + Flutter multiplataforma
 - 🌐 **Desarrollo Web**: React, Next.js, sitios corporativos avanzados
@@ -239,15 +254,16 @@ Large Desktop:  1440px+ (contenido expandido)
 - 💼 **Consultorías Tech**: Arquitectura de software y transformación digital
 
 ### **🎯 Especialidades Técnicas**
+
 ```javascript
 // Stack Tecnológico Principal
 const jonathAnStack = {
-  frontend: ['React 18', 'Next.js 14', 'TypeScript', 'Tailwind CSS'],
-  backend: ['Node.js', 'Python', 'Java Spring Boot', 'Firebase'],
-  mobile: ['Android (Kotlin)', 'Flutter', 'React Native'],
-  ai: ['OpenAI GPT-4', 'Google Genkit', 'Gemini API', 'LangChain'],
-  databases: ['PostgreSQL', 'Firebase', 'MongoDB', 'Supabase'],
-  cloud: ['Google Cloud', 'Firebase', 'Vercel', 'GitHub Pages']
+  frontend: ["React 18", "Next.js 14", "TypeScript", "Tailwind CSS"],
+  backend: ["Node.js", "Python", "Java Spring Boot", "Firebase"],
+  mobile: ["Android (Kotlin)", "Flutter", "React Native"],
+  ai: ["OpenAI GPT-4", "Google Genkit", "Gemini API", "LangChain"],
+  databases: ["PostgreSQL", "Firebase", "MongoDB", "Supabase"],
+  cloud: ["Google Cloud", "Firebase", "Vercel", "GitHub Pages"],
 };
 ```
 
@@ -256,9 +272,13 @@ const jonathAnStack = {
 <div align="center">
 
 ### 📧 **Email Corporativo**: [jonathan@jkdtech.cl](mailto:jonathan@jkdtech.cl)
+
 ### 💬 **WhatsApp Business**: [Chat Directo](https://wa.me/56969076188?text=Hola%20Jonathan%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar)
+
 ### 🌐 **Sitio Principal**: [jkdtech.cl](https://jkdtech.cl)
+
 ### 💼 **LinkedIn**: [jonathan-moya-y](https://linkedin.com/in/jonathan-moya-y)
+
 ### 📱 **GitHub**: [JKDTech](https://github.com/JKDTech)
 
 **⚡ Tiempo de respuesta promedio: 2-4 horas**
@@ -267,15 +287,8 @@ const jonathAnStack = {
 
 ---
 
-## 🚀 **Deployment & Hosting**
-
-### **📋 Guías de Implementación**
-- 📖 **Configuración Dominio**: [`docs/DOMAIN_SETUP_GUIDE.md`](docs/DOMAIN_SETUP_GUIDE.md)
-- 📧 **Setup Email Profesional**: [`docs/EMAIL_SETUP_GUIDE.md`](docs/EMAIL_SETUP_GUIDE.md)
-- 🔧 **GitHub Pages**: Automático con push a `main` branch
-- 🌐 **Custom Domain**: `jkdtech.cl` con SSL/HTTPS automático
-
 ### **🔄 CI/CD Pipeline**
+
 ```yaml
 # Workflow automático
 git push origin main → GitHub Actions → Build → Deploy → Live
@@ -284,12 +297,14 @@ git push origin main → GitHub Actions → Build → Deploy → Live
 ## 📊 **Roadmap & Futuras Mejoras**
 
 ### **Q1 2025**
+
 - [ ] 🌐 **Internacionalización**: Versión EN/ES
 - [ ] 🤖 **AI Chatbot**: Asistente virtual integrado
 - [ ] 📊 **Analytics Dashboard**: Métricas avanzadas
 - [ ] 🎨 **Theme Switcher**: Dark/Light mode completo
 
 ### **Q2 2025**
+
 - [ ] 📱 **PWA Avanzada**: Funcionalidad offline completa
 - [ ] 🔊 **Voice Interface**: Navegación por voz
 - [ ] 🎥 **Video Backgrounds**: Hero section con video
@@ -302,7 +317,7 @@ Este proyecto está bajo **Licencia MIT** - ver [LICENSE](LICENSE) para detalles
 **Uso Comercial**: ✅ Permitido  
 **Modificación**: ✅ Permitido  
 **Distribución**: ✅ Permitida  
-**Uso Privado**: ✅ Permitido  
+**Uso Privado**: ✅ Permitido
 
 ## 🤝 **Contribuciones & Colaboraciones**
 
@@ -317,10 +332,11 @@ Este proyecto está bajo **Licencia MIT** - ver [LICENSE](LICENSE) para detalles
 
 ## 🌟 **Testimonios & Stats**
 
-> *"Jonathan desarrolló nuestra plataforma de IA corporativa. Excelente calidad técnica y entrega puntual."*  
+> _"Jonathan desarrolló nuestra plataforma de IA corporativa. Excelente calidad técnica y entrega puntual."_  
 > **— CEO, Empresa Tecnológica**
 
 **📊 Estadísticas del Portfolio:**
+
 - 🌍 **Visitantes únicos**: 1000+/mes
 - ⭐ **Lighthouse Score**: 98/100
 - 📱 **Tasa de conversión**: 15%
