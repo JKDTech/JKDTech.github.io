@@ -10,7 +10,7 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 
-> 🌟 **Portafolio profesional moderno** de Jonathan Moya, Ingeniero en Informática y Fundador de **JKD Tech**. Especialista en desarrollo de aplicaciones con **IA**, sitios web corporativos y soluciones tecnológicas innovadoras con **arquitectura mobile-first** y **diseño glassmorphism**.
+> 🌟 **Portafolio profesional 2025** de Jonathan Moya, **Software Engineer Consultant en Amaris** y **CEO de JKD Tech**. Especialista en **Java + Quarkus**, desarrollo de **plataformas de IA revolucionarias** y aplicaciones móviles con arquitectura **mobile-first** y storytelling profesional.
 
 ## ✨ Características Destacadas
 
@@ -109,6 +109,16 @@
 - **Múltiples canales** optimizados para conversión
 
 ## 🚀 **Instalación y Uso**
+
+### **🎆 Principales Actualizaciones 2025**
+
+- ✅ **Proyectos Profesionales**: 5 proyectos principales con URLs de GitHub y demos
+- ✅ **JKDTech AI Platform**: Primera plataforma MoE+MCP comercial del mundo
+- ✅ **Storytelling Mejorado**: Historia personal desde soporte técnico hasta CEO
+- ✅ **URLs GitHub Integradas**: Links directos a repositorios y demos funcionales
+- ✅ **Especialización Clara**: Java + Quarkus (Amaris) + IA (JKD Tech)
+- ✅ **Mobile-First Optimizado**: Breakpoints desde 320px hasta 8000px+
+- ✅ **Marca JKD Tech**: Visión corporativa y diferenciadores únicos
 
 ### **Clonar el Repositorio**
 
