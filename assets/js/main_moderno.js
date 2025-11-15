@@ -39,6 +39,7 @@ function initializeApp() {
     initializeTypingEffect();
     initializeSkillBars();
     initializeTimelineAnimations();
+    updateCurrentJobYear();
     initializeProjectFilters();
     initializeContactForm();
     initializePerformanceOptimizations();
@@ -372,6 +373,29 @@ function initializeTimelineAnimations() {
     timelineItems.forEach(item => {
         timelineObserver.observe(item);
     });
+}
+
+/**
+ * Actualiza automáticamente el año en trabajos actuales
+ */
+function updateCurrentJobYear() {
+    const currentJobElements = document.querySelectorAll('.timeline-year[data-current="true"]');
+    const currentYear = new Date().getFullYear();
+
+    currentJobElements.forEach(element => {
+        const startYear = element.getAttribute('data-start-year');
+        if (startYear) {
+            // Si es el mismo año de inicio, mostrar solo "2024-Actual"
+            // Si ya pasó el año, mostrar "2024-2025" (o el año actual)
+            if (parseInt(startYear) === currentYear) {
+                element.textContent = `${startYear}-Actual`;
+            } else {
+                element.textContent = `${startYear}-${currentYear}`;
+            }
+        }
+    });
+
+    console.log(`✅ Año de trabajo actual actualizado: ${currentYear}`);
 }
 
 /**
