@@ -75,11 +75,163 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX'); // Reemplazar con tu ID real
     </script>
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://jkdtech.github.io/#person",
+          "name": "Jonathan Moya",
+          "givenName": "Jonathan",
+          "familyName": "Moya",
+          "jobTitle": "Software Engineer Consultant",
+          "description": "Ingeniero en Informática con más de 10 años de experiencia en desarrollo de software, especializado en Java, Spring Boot, Angular, Quarkus, y soluciones de Inteligencia Artificial.",
+          "url": "https://jkdtech.github.io",
+          "image": "https://jkdtech.github.io/assets/img/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL",
+            "addressLocality": "Chile"
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Universidad Mayor"
+          },
+          "knowsAbout": [
+            "Java",
+            "Spring Boot",
+            "Angular",
+            "Quarkus",
+            "Microservices",
+            "Docker",
+            "Kubernetes",
+            "GCP",
+            "Artificial Intelligence",
+            "Flutter",
+            "Android Development",
+            "APIs REST",
+            "PostgreSQL",
+            "Firebase"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/jonathan-moya-y",
+            "https://github.com/JKDTech"
+          ],
+          "worksFor": {
+            "@id": "https://jkdtech.github.io/#organization"
+          },
+          "founder": {
+            "@id": "https://jkdtech.github.io/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://jkdtech.github.io/#organization",
+          "name": "JKD Tech",
+          "alternateName": "JKD Technology Solutions",
+          "url": "https://jkdtech.github.io",
+          "logo": "https://jkdtech.github.io/assets/img/logo.png",
+          "image": "https://jkdtech.github.io/assets/img/og-image.jpg",
+          "description": "Empresa de desarrollo de software especializada en soluciones de Inteligencia Artificial, desarrollo de aplicaciones móviles y web, y consultoría tecnológica.",
+          "founder": {
+            "@id": "https://jkdtech.github.io/#person"
+          },
+          "foundingDate": "2014",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": "jkd.jonathan@gmail.com",
+            "availableLanguage": ["Spanish", "English"]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/jonathan-moya-y",
+            "https://github.com/JKDTech"
+          ],
+          "areaServed": {
+            "@type": "Place",
+            "name": "Worldwide"
+          },
+          "serviceType": [
+            "Software Development",
+            "Artificial Intelligence Solutions",
+            "Mobile App Development",
+            "Web Development",
+            "Cloud Solutions",
+            "Technical Consulting"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jkdtech.github.io/#website",
+          "url": "https://jkdtech.github.io",
+          "name": "Jonathan Moya - JKD Tech Portfolio",
+          "description": "Portfolio profesional de Jonathan Moya, Software Engineer Consultant especializado en Java, Angular, Quarkus y soluciones de Inteligencia Artificial.",
+          "publisher": {
+            "@id": "https://jkdtech.github.io/#person"
+          },
+          "inLanguage": "es-CL"
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://jkdtech.github.io/#profilepage",
+          "url": "https://jkdtech.github.io",
+          "name": "Jonathan Moya - Software Engineer Portfolio",
+          "dateModified": "2025-01-15",
+          "mainEntity": {
+            "@id": "https://jkdtech.github.io/#person"
+          },
+          "breadcrumb": {
+            "@id": "https://jkdtech.github.io/#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jkdtech.github.io/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://jkdtech.github.io/#inicio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sobre Mí",
+              "item": "https://jkdtech.github.io/#sobre-mi"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Proyectos",
+              "item": "https://jkdtech.github.io/#proyectos"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Contacto",
+              "item": "https://jkdtech.github.io/#contacto"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip Link para Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <!-- Navegación Moderna -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top" id="mainNavbar" role="navigation" aria-label="Navegación principal">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#inicio">
                 <i class="fas fa-code text-primary me-2"></i>
@@ -122,7 +274,8 @@
     </nav>
 
     <!-- Hero Section Modernizado -->
-    <section id="inicio" class="hero-section">
+    <main id="main-content">
+    <section id="inicio" class="hero-section" role="region" aria-label="Presentación">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="row align-items-center min-vh-100">
@@ -163,15 +316,15 @@
                         </div>
 
                         <!-- Social Links -->
-                        <div class="social-links mt-4">
-                            <a href="https://linkedin.com/in/jonathan-moya-y" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin"></i>
+                        <div class="social-links mt-4" role="navigation" aria-label="Enlaces a redes sociales">
+                            <a href="https://linkedin.com/in/jonathan-moya-y" target="_blank" class="social-link" aria-label="Visitar perfil de LinkedIn">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                             </a>
-                            <a href="https://github.com/JKDTech" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
+                            <a href="https://github.com/JKDTech" target="_blank" class="social-link" aria-label="Visitar perfil de GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
                             </a>
-                            <a href="https://jkdtech.cl" target="_blank" class="social-link">
-                                <i class="fas fa-globe"></i>
+                            <a href="https://jkdtech.cl" target="_blank" class="social-link" aria-label="Visitar sitio web de JKD Tech">
+                                <i class="fas fa-globe" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -180,18 +333,18 @@
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="hero-visual">
                         <div class="hero-image-container">
-                            <div class="floating-elements">
+                            <div class="floating-elements" aria-hidden="true">
                                 <div class="floating-icon" style="animation-delay: 0s;">
-                                    <i class="fab fa-react text-info"></i>
+                                    <i class="fab fa-react text-info" title="React"></i>
                                 </div>
                                 <div class="floating-icon" style="animation-delay: 0.5s;">
-                                    <i class="fab fa-node-js text-success"></i>
+                                    <i class="fab fa-node-js text-success" title="Node.js"></i>
                                 </div>
                                 <div class="floating-icon" style="animation-delay: 1s;">
-                                    <i class="fab fa-python text-warning"></i>
+                                    <i class="fab fa-python text-warning" title="Python"></i>
                                 </div>
                                 <div class="floating-icon" style="animation-delay: 1.5s;">
-                                    <i class="fas fa-robot text-primary"></i>
+                                    <i class="fas fa-robot text-primary" title="Inteligencia Artificial"></i>
                                 </div>
                             </div>
                             <div class="code-animation">
@@ -1456,9 +1609,10 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white">
+    <footer class="footer bg-dark text-white" role="contentinfo">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
