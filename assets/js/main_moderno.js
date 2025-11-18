@@ -541,7 +541,7 @@ function handleContactFormSubmission(form) {
     
     // Enviar con EmailJS
     if (typeof emailjs !== 'undefined') {
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        emailjs.send('service_zgnbiyz', 'template_nt4203d', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 showNotification('¡Mensaje enviado exitosamente! Te contactaré pronto.', 'success');
