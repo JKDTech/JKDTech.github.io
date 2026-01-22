@@ -39,6 +39,7 @@ function initializeApp() {
     initializeTypingEffect();
     initializeSkillBars();
     initializeTimelineAnimations();
+    updateCurrentJobYear();
     initializeProjectFilters();
     initializeContactForm();
     initializePerformanceOptimizations();
@@ -375,6 +376,29 @@ function initializeTimelineAnimations() {
 }
 
 /**
+ * Actualiza automáticamente el año en trabajos actuales
+ */
+function updateCurrentJobYear() {
+    const currentJobElements = document.querySelectorAll('.timeline-year[data-current="true"]');
+    const currentYear = new Date().getFullYear();
+
+    currentJobElements.forEach(element => {
+        const startYear = element.getAttribute('data-start-year');
+        if (startYear) {
+            // Si es el mismo año de inicio, mostrar solo "2024-Actual"
+            // Si ya pasó el año, mostrar "2024-2025" (o el año actual)
+            if (parseInt(startYear) === currentYear) {
+                element.textContent = `${startYear}-Actual`;
+            } else {
+                element.textContent = `${startYear}-${currentYear}`;
+            }
+        }
+    });
+
+    console.log(`✅ Año de trabajo actual actualizado: ${currentYear}`);
+}
+
+/**
  * ========================================
  * FILTROS DE PROYECTOS
  * ========================================
@@ -501,6 +525,7 @@ async function handleContactFormSubmission(form) {
     submitBtn.disabled = true;
     submitBtn.classList.add('btn-loading');
     
+<<<<<<< HEAD
     try {
         const response = await fetch(form.action, {
             method: form.method || 'POST',
@@ -512,6 +537,57 @@ async function handleContactFormSubmission(form) {
 
         if (response.ok) {
             showNotification('¡Mensaje enviado exitosamente! Te contactaré pronto.', 'success');
+=======
+    // Preparar datos para EmailJS
+    const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        phone: data.phone || 'No proporcionado',
+        company: data.company || 'No especificada',
+        project_type: getProjectTypeText(data.project_type),
+        budget: getBudgetText(data.budget),
+        message: data.message,
+        to_name: 'Jonathan Moya',
+        reply_to: data.email,
+        submission_date: new Date().toLocaleDateString('es-CL')
+    };
+    
+    // Enviar con EmailJS
+    if (typeof emailjs !== 'undefined') {
+        emailjs.send('service_zgnbiyz', 'template_nt4203d', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                showNotification('¡Mensaje enviado exitosamente! Te contactaré pronto.', 'success');
+                form.reset();
+                
+                // Track successful submission
+                trackEvent('contact_form_submit', {
+                    success: true,
+                    project_type: data.project_type,
+                    has_budget: !!data.budget
+                });
+                
+            }, function(error) {
+                console.log('FAILED...', error);
+                showNotification('Error al enviar el mensaje. Por favor, intenta nuevamente o contáctame directamente.', 'error');
+                
+                // Track failed submission
+                trackEvent('contact_form_submit', {
+                    success: false,
+                    error: error.text
+                });
+            })
+            .finally(() => {
+                // Restaurar botón
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('btn-loading');
+            });
+    } else {
+        // Fallback sin EmailJS
+        setTimeout(() => {
+            showNotification('¡Mensaje recibido! Te contactaré pronto por email.', 'success');
+>>>>>>> e18488659a84d982040f739e74480b0f027d370b
             form.reset();
             
             // Track successful submission

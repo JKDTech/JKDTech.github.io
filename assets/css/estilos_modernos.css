@@ -47,6 +47,121 @@
     --container-max-width: 1200px;
 }
 
+/* ==========================================================================
+   Accesibilidad - Skip Link
+   ========================================================================== */
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: var(--shadow-xl);
+    transition: top var(--transition-normal);
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Accesibilidad - Focus Visible mejorado
+   ========================================================================== */
+
+/* Focus visible para todos los elementos interactivos */
+*:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    border-radius: 4px;
+    transition: outline-offset var(--transition-fast);
+}
+
+/* Mejorar contraste en elementos oscuros */
+.bg-dark *:focus-visible,
+.navbar *:focus-visible,
+.footer *:focus-visible {
+    outline-color: var(--primary-color);
+    outline-width: 3px;
+}
+
+/* Focus en botones */
+.btn:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+    box-shadow: 0 0 0 6px rgba(0, 212, 255, 0.2);
+}
+
+/* Focus en enlaces */
+a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+    text-decoration: underline;
+}
+
+/* Focus en inputs del formulario */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 0;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.15);
+}
+
+/* Focus en navegación */
+.nav-link:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+    background: rgba(0, 212, 255, 0.1);
+}
+
+/* Focus en social links */
+.social-link:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    transform: scale(1.1);
+}
+
+/* Indicador de teclado para navegación */
+body.user-is-tabbing *:focus {
+    outline: 3px solid var(--primary-color) !important;
+    outline-offset: 3px !important;
+}
+
+/* Remover outline cuando se usa mouse (opcional) */
+body:not(.user-is-tabbing) *:focus {
+    outline: none;
+}
+
+/* ==========================================================================
+   Reducir movimiento para usuarios con preferencias de accesibilidad
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .skip-link {
+        transition: none;
+    }
+}
+
 /* Reset y Base Styles */
 * {
     margin: 0;
