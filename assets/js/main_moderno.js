@@ -479,7 +479,7 @@ function formatPhoneNumber(input) {
     input.value = value;
 }
 
-function handleContactFormSubmission(form) {
+async function handleContactFormSubmission(form) {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
     
@@ -501,69 +501,48 @@ function handleContactFormSubmission(form) {
     submitBtn.disabled = true;
     submitBtn.classList.add('btn-loading');
     
-    // Preparar datos para EmailJS
-    const templateParams = {
-        from_name: data.name,
-        from_email: data.email,
-        phone: data.phone || 'No proporcionado',
-        company: data.company || 'No especificada',
-        project_type: getProjectTypeText(data.project_type),
-        budget: getBudgetText(data.budget),
-        message: data.message,
-        to_name: 'Jonathan Moya',
-        reply_to: data.email,
-        submission_date: new Date().toLocaleDateString('es-CL')
-    };
-    
-    // Enviar con EmailJS
-    if (typeof emailjs !== 'undefined') {
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                showNotification('¡Mensaje enviado exitosamente! Te contactaré pronto.', 'success');
-                form.reset();
-                
-                // Track successful submission
-                trackEvent('contact_form_submit', {
-                    success: true,
-                    project_type: data.project_type,
-                    has_budget: !!data.budget
-                });
-                
-            }, function(error) {
-                console.log('FAILED...', error);
-                showNotification('Error al enviar el mensaje. Por favor, intenta nuevamente o contáctame directamente.', 'error');
-                
-                // Track failed submission
-                trackEvent('contact_form_submit', {
-                    success: false,
-                    error: error.text
-                });
-            })
-            .finally(() => {
-                // Restaurar botón
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('btn-loading');
-            });
-    } else {
-        // Fallback sin EmailJS
-        setTimeout(() => {
-            showNotification('¡Mensaje recibido! Te contactaré pronto por email.', 'success');
+    try {
+        const response = await fetch(form.action, {
+            method: form.method || 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            showNotification('¡Mensaje enviado exitosamente! Te contactaré pronto.', 'success');
             form.reset();
             
-            // Restaurar botón
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-            submitBtn.classList.remove('btn-loading');
-            
-            // Track event
+            // Track successful submission
             trackEvent('contact_form_submit', {
                 success: true,
-                method: 'fallback'
+                project_type: data.project_type,
+                has_budget: !!data.budget
             });
-            
-        }, 1500);
+        } else {
+            const data = await response.json();
+            if (Object.hasOwn(data, 'errors')) {
+                 const errorMessages = data.errors.map(error => error.message).join(", ");
+                 throw new Error(errorMessages);
+            } else {
+                throw new Error('Hubo un problema al enviar el formulario');
+            }
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        showNotification('Error al enviar el mensaje. Por favor, intenta nuevamente o contáctame directamente.', 'error');
+        
+        // Track failed submission
+        trackEvent('contact_form_submit', {
+            success: false,
+            error: error.message
+        });
+    } finally {
+        // Restaurar botón
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('btn-loading');
     }
 }
 

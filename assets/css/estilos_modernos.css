@@ -1630,6 +1630,13 @@ section {
     color: white !important;
 }
 
+/* Fix para opciones de select visibles */
+.contact-form select.form-control option {
+    background-color: var(--bg-dark);
+    color: white;
+    padding: 10px;
+}
+
 .contact-availability span {
     color: white !important;
 }
