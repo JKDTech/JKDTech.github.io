@@ -459,6 +459,11 @@ img { max-width: 100%; }
   border-color: rgba(245,158,11,0.25);
   color: #fbbf24;
 }
+.tag--beta {
+  background: rgba(99,102,241,0.12);
+  border-color: rgba(99,102,241,0.25);
+  color: #a5b4fc;
+}
 .project-info h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
 .project-info p { font-size: 13px; color: var(--text-muted); line-height: 1.6; flex: 1; margin-bottom: 14px; }
 .project-link {
