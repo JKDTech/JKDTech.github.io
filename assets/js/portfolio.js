@@ -32,7 +32,7 @@ document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(
 
 /* ---- Typing animation ---- */
 const titles = [
-  'Software Engineer Consultant',
+  'Software Engineer Experience Consultant',
   'Fundador de JKD Tech',
   'Java & Quarkus Specialist',
   'Flutter Developer',

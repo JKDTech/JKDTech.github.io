@@ -10,7 +10,7 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 
-> 🌟 **Portafolio profesional 2025** de Jonathan Moya, **Software Engineer Consultant en Amaris** y **CEO de JKD Tech**. Especialista en **Java + Quarkus**, desarrollo de **plataformas de IA revolucionarias** y aplicaciones móviles con arquitectura **mobile-first** y storytelling profesional.
+> 🌟 **Portafolio profesional 2025** de Jonathan Moya, **Software Engineer Experience Consultant en Amaris** y **CEO de JKD Tech**. Especialista en **Java + Quarkus**, desarrollo de **plataformas de IA revolucionarias** y aplicaciones móviles con arquitectura **mobile-first** y storytelling profesional.
 
 ## ✨ Características Destacadas
 
