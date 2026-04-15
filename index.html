@@ -27,7 +27,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -56,12 +56,12 @@
         <span class="nav-logo-text">Jonathan Moya</span>
       </a>
       <div class="nav-menu" id="navMenu">
-        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-        <a href="#experiencia" class="nav-link">Experiencia</a>
-        <a href="#proyectos" class="nav-link">Proyectos</a>
-        <a href="#habilidades" class="nav-link">Habilidades</a>
-        <a href="#certificaciones" class="nav-link">Certificaciones</a>
-        <a href="#contacto" class="nav-link nav-cta">Contacto</a>
+        <a href="#sobre-mi"       class="nav-link">Sobre mí</a>
+        <a href="#experiencia"    class="nav-link">Experiencia</a>
+        <a href="#proyectos"      class="nav-link">Proyectos</a>
+        <a href="#habilidades"    class="nav-link">Habilidades</a>
+        <a href="#certificaciones"class="nav-link">Certs</a>
+        <a href="#contacto"       class="nav-link nav-cta">Contacto</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -71,46 +71,34 @@
 
   <!-- ========== HERO ========== -->
   <section id="inicio" class="hero">
-    <div class="hero-grid"></div>
-    <div class="hero-container">
+    <div class="hero-inner">
 
-      <!-- Avatar animado -->
-      <div class="avatar-wrapper" data-reveal>
-        <div class="avatar-ring avatar-ring--outer"></div>
-        <div class="avatar-ring avatar-ring--inner"></div>
-        <div class="avatar-core">
-          <span class="avatar-initials">JM</span>
-        </div>
-        <div class="avatar-orbit">
-          <span class="orbit-icon" style="--i:0"><i class="fab fa-java"></i></span>
-          <span class="orbit-icon" style="--i:1"><i class="fab fa-flutter" title="Flutter"></i></span>
-          <span class="orbit-icon" style="--i:2"><i class="fab fa-angular"></i></span>
-          <span class="orbit-icon" style="--i:3"><i class="fas fa-robot"></i></span>
-        </div>
-      </div>
-
-      <!-- Texto hero -->
+      <!-- Columna izquierda -->
       <div class="hero-text" data-reveal>
-        <p class="hero-greeting">👋 Hola, soy</p>
-        <h1 class="hero-name">Jonathan <span class="gradient-text">Moya</span></h1>
-        <h2 class="hero-title">
-          <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
-        </h2>
-        <p class="hero-desc">
-          Software Engineer con <strong>10+ años de experiencia</strong> y 7 años enfocado en desarrollo de software.
-          Consultor en <strong>Amaris Consulting</strong> · Fundador de <strong>Jokadra</strong>.
-        </p>
-        <div class="hero-badges">
-          <span class="badge">Java + Quarkus</span>
-          <span class="badge">Flutter</span>
-          <span class="badge">Angular</span>
-          <span class="badge">GCP · Kubernetes</span>
-          <span class="badge">IA · LLMs</span>
+        <div class="hero-tag">
+          <span class="dot"></span>
+          Disponible para proyectos
         </div>
+
+        <h1 class="hero-name">
+          Jonathan<br><span class="accent">Moya</span>
+        </h1>
+
+        <p class="hero-role">
+          <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+        </p>
+
+        <p class="hero-desc">
+          Software Engineer con <strong>10+ años de experiencia</strong> y 7 años en desarrollo de software.
+          Consultor en <strong>Amaris Consulting</strong> · Fundador de <strong>Jokadra</strong>,
+          venture builder tecnológica construyendo un ecosistema de productos SaaS desde Santiago, Chile.
+        </p>
+
         <div class="hero-actions">
           <a href="#proyectos" class="btn btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
           <a href="https://site-jkdtech.vercel.app" target="_blank" rel="noopener" class="btn btn-ghost">Jokadra <i class="fas fa-external-link-alt"></i></a>
         </div>
+
         <div class="hero-social">
           <a href="https://www.linkedin.com/in/jonathan-moya-y" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/JKDTech" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -118,8 +106,40 @@
         </div>
       </div>
 
+      <!-- Columna derecha: widget de stats -->
+      <div class="hero-widget" data-reveal>
+        <div class="widget-stats">
+          <div class="ws">
+            <span class="ws-num">10<span class="accent">+</span></span>
+            <span class="ws-label">años exp.</span>
+          </div>
+          <div class="ws">
+            <span class="ws-num">14</span>
+            <span class="ws-label">proyectos</span>
+          </div>
+          <div class="ws">
+            <span class="ws-num">7</span>
+            <span class="ws-label">años dev</span>
+          </div>
+          <div class="ws">
+            <span class="ws-num">CL</span>
+            <span class="ws-label">Santiago</span>
+          </div>
+        </div>
+        <div class="widget-divider"></div>
+        <p class="widget-stack-label">Stack principal</p>
+        <div class="widget-stack">
+          <span class="ws-tag">Java</span>
+          <span class="ws-tag">Quarkus</span>
+          <span class="ws-tag">Flutter</span>
+          <span class="ws-tag">Next.js</span>
+          <span class="ws-tag">GCP</span>
+          <span class="ws-tag">Gemini AI</span>
+          <span class="ws-tag">Supabase</span>
+        </div>
+      </div>
     </div>
-    <!-- Scroll indicator -->
+
     <a href="#sobre-mi" class="scroll-indicator" aria-label="Scroll">
       <span class="scroll-dot"></span>
     </a>
@@ -129,29 +149,57 @@
   <section id="sobre-mi" class="section">
     <div class="container">
       <div class="section-header" data-reveal>
-        <p class="section-label">Quién soy</p>
-        <h2 class="section-title">Sobre Mí</h2>
+        <span class="section-num">01 — Sobre mí</span>
+        <h2 class="section-title">Ingeniero, fundador<br>y constructor de productos.</h2>
       </div>
-      <div class="about-grid" data-reveal>
-        <div class="about-card glass">
-          <div class="about-icon"><i class="fas fa-code"></i></div>
-          <h3>Ingeniero en Informática</h3>
-          <p>Egresado de Duoc UC con especialización en backend y arquitecturas de software modernas. Apasionado por construir sistemas robustos, escalables y con impacto real.</p>
+
+      <div class="about-layout" data-reveal>
+        <div class="about-statement">
+          <p>
+            Soy Ingeniero en Informática egresado de Duoc UC, especializado en backend y arquitecturas de software modernas.
+            Actualmente trabajo como <strong>Software Engineer Experience Consultant en Amaris Consulting</strong>,
+            liderando iniciativas de Developer Experience y eficiencia en plataformas de microservicios sobre GCP.
+          </p>
+          <p>
+            Paralelamente, dirijo <strong>Jokadra</strong>, un venture builder tecnológico enfocado en construir
+            productos SaaS reales: desde sistemas de reservas B2B hasta plataformas de control parental con IA.
+            Creo en software que resuelve problemas concretos, no prototipos sin usuarios.
+          </p>
+          <p>
+            Disponible para proyectos remotos. Trabajo en español e inglés.
+            Apasionado por el emprendimiento tecnológico latinoamericano.
+          </p>
         </div>
-        <div class="about-card glass">
-          <div class="about-icon"><i class="fas fa-briefcase"></i></div>
-          <h3>Consultor Profesional</h3>
-          <p>Software Engineer Experience Consultant en <strong>Amaris Consulting</strong>, trabajando en proyectos de alto impacto para sectores de banca, energía y seguros usando Java, Quarkus y GCP.</p>
-        </div>
-        <div class="about-card glass">
-          <div class="about-icon"><i class="fas fa-rocket"></i></div>
-          <h3>Fundador Jokadra</h3>
-          <p>Venture Builder tecnológica en Santiago de Chile. Construyendo un ecosistema de productos SaaS: marketplaces, reservas, herramientas de IA y plataformas financieras.</p>
-        </div>
-        <div class="about-card glass">
-          <div class="about-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <h3>Santiago, Chile</h3>
-          <p>Disponible para proyectos remotos globales. Trabajo en español e inglés. Apasionado por el emprendimiento tecnológico latinoamericano y la democratización del software.</p>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="as-num">10+</span>
+            <div class="as-info">
+              <span class="as-label">Años de experiencia</span>
+              <span class="as-sub">en tecnología</span>
+            </div>
+          </div>
+          <div class="about-stat">
+            <span class="as-num">7</span>
+            <div class="as-info">
+              <span class="as-label">Años desarrollando software</span>
+              <span class="as-sub">backend · mobile · web</span>
+            </div>
+          </div>
+          <div class="about-stat">
+            <span class="as-num">14</span>
+            <div class="as-info">
+              <span class="as-label">Proyectos construidos</span>
+              <span class="as-sub">ecosistema Jokadra</span>
+            </div>
+          </div>
+          <div class="about-stat">
+            <span class="as-num">3</span>
+            <div class="as-info">
+              <span class="as-label">Sectores de impacto</span>
+              <span class="as-sub">banca · energía · seguros</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -161,35 +209,66 @@
   <section id="experiencia" class="section section--alt">
     <div class="container">
       <div class="section-header" data-reveal>
-        <p class="section-label">Trayectoria</p>
-        <h2 class="section-title">Experiencia Profesional</h2>
+        <span class="section-num">02 — Experiencia</span>
+        <h2 class="section-title">Trayectoria profesional.</h2>
       </div>
+
       <div class="timeline">
 
+        <!-- Amaris — Cargo actual -->
         <div class="timeline-item" data-reveal>
-          <div class="timeline-marker current"></div>
-          <div class="timeline-content glass">
-            <div class="timeline-meta">
-              <span class="timeline-year">2024 — Actual</span>
-              <span class="timeline-badge">En curso</span>
-            </div>
+          <div class="timeline-left">
+            <span class="timeline-period">Feb 2026 — Presente · 3 meses</span>
+            <span class="timeline-company">Amaris Consulting</span>
+            <span class="timeline-type">Full-time · Hybrid</span>
+            <span class="timeline-badge">Actual</span>
+          </div>
+          <div class="timeline-content">
             <h3>Software Engineer Experience Consultant</h3>
-            <h4>Amaris Consulting</h4>
-            <p>Especialización en desarrollo y optimización de APIs y microservicios. Proyectos de alto impacto en banca, energía y seguros.</p>
+            <ul class="timeline-bullets">
+              <li>Lidero iniciativas de Developer Experience (DevEx) y eficiencia operativa en plataformas de microservicios sobre GCP.</li>
+              <li>Diseño estrategias de optimización de costos en Firestore (caching por fases), proyectando reducción significativa en consumo de lecturas.</li>
+              <li>Evoluciono flujos críticos de negocio (OCR y liquidación de siniestros) con foco en observabilidad, trazabilidad y resiliencia.</li>
+              <li>Impulso estándares de calidad (testing, cobertura >80%, SonarQube, Jacoco) a nivel de equipos.</li>
+              <li>Asesoro técnicamente en arquitectura, performance y escalabilidad sobre Kubernetes (GKE).</li>
+            </ul>
             <div class="tech-pills">
-              <span>Java</span><span>Spring Boot</span><span>Quarkus</span><span>GCP</span><span>Kubernetes</span><span>Docker</span>
+              <span>Java</span><span>Quarkus</span><span>GCP</span><span>GKE</span><span>Firestore</span><span>Kubernetes</span><span>SonarQube</span>
             </div>
           </div>
         </div>
 
+        <!-- Amaris — Cargo anterior -->
         <div class="timeline-item" data-reveal>
-          <div class="timeline-marker"></div>
-          <div class="timeline-content glass">
-            <div class="timeline-meta">
-              <span class="timeline-year">2023</span>
+          <div class="timeline-left">
+            <span class="timeline-period">Feb 2024 — Abr 2026 · 2 años 3 meses</span>
+            <span class="timeline-company">Amaris Consulting</span>
+            <span class="timeline-type">Full-time · Chile</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Software Engineer Consultant</h3>
+            <ul class="timeline-bullets">
+              <li>Desarrollo de microservicios en Java + Quarkus sobre GCP (GKE, Firestore, GCS, Pub/Sub).</li>
+              <li>Implementé flujo de OCR y liquidación de siniestros con trazabilidad completa y auditoría.</li>
+              <li>Aumenté la calidad del software logrando >80% de cobertura de tests (JUnit, Mockito).</li>
+              <li>Automatización de pipelines CI/CD con GitLab, Helm y Kubernetes.</li>
+              <li>Trabajo en equipos ágiles utilizando Jira y Confluence.</li>
+            </ul>
+            <div class="tech-pills">
+              <span>Java</span><span>Spring Boot</span><span>Quarkus</span><span>GCP</span><span>Kubernetes</span><span>Docker</span><span>GitLab CI</span>
             </div>
+          </div>
+        </div>
+
+        <!-- Experis -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-left">
+            <span class="timeline-period">2023</span>
+            <span class="timeline-company">Experis Chile</span>
+            <span class="timeline-type">Servicios Financieros</span>
+          </div>
+          <div class="timeline-content">
             <h3>Developer Full Stack</h3>
-            <h4>Experis Chile · Servicios Financieros</h4>
             <p>Desarrollo de aplicaciones móviles para Líder BCI con Angular, Ionic y microservicios Java.</p>
             <div class="tech-pills">
               <span>Angular</span><span>Ionic</span><span>Java</span><span>Microservicios</span>
@@ -197,14 +276,15 @@
           </div>
         </div>
 
+        <!-- Copec -->
         <div class="timeline-item" data-reveal>
-          <div class="timeline-marker"></div>
-          <div class="timeline-content glass">
-            <div class="timeline-meta">
-              <span class="timeline-year">2021 — 2022</span>
-            </div>
+          <div class="timeline-left">
+            <span class="timeline-period">2021 — 2022</span>
+            <span class="timeline-company">Empresas Copec</span>
+            <span class="timeline-type">Energía</span>
+          </div>
+          <div class="timeline-content">
             <h3>Analista Convergente</h3>
-            <h4>Empresas Copec</h4>
             <p>Análisis, automatización y desarrollo de soluciones internas para optimizar procesos de negocio en el sector energético.</p>
             <div class="tech-pills">
               <span>Java</span><span>SQL</span><span>Automatización</span>
@@ -212,14 +292,14 @@
           </div>
         </div>
 
+        <!-- DBA -->
         <div class="timeline-item" data-reveal>
-          <div class="timeline-marker"></div>
-          <div class="timeline-content glass">
-            <div class="timeline-meta">
-              <span class="timeline-year">2019 — 2020</span>
-            </div>
+          <div class="timeline-left">
+            <span class="timeline-period">2019 — 2020</span>
+            <span class="timeline-company">Empresa Tecnología</span>
+          </div>
+          <div class="timeline-content">
             <h3>Administrador de Bases de Datos</h3>
-            <h4>Empresa de Tecnología</h4>
             <p>Administración, optimización y mantenimiento de bases de datos relacionales para sistemas de producción críticos.</p>
             <div class="tech-pills">
               <span>SQL Server</span><span>Oracle</span><span>PostgreSQL</span>
@@ -227,14 +307,14 @@
           </div>
         </div>
 
+        <!-- Inicios -->
         <div class="timeline-item" data-reveal>
-          <div class="timeline-marker"></div>
-          <div class="timeline-content glass">
-            <div class="timeline-meta">
-              <span class="timeline-year">2014 — 2018</span>
-            </div>
+          <div class="timeline-left">
+            <span class="timeline-period">2014 — 2018</span>
+            <span class="timeline-company">Soporte · Análisis</span>
+          </div>
+          <div class="timeline-content">
             <h3>Inicios en Tecnología</h3>
-            <h4>Soporte · Análisis · Sistemas</h4>
             <p>Primeros años en soporte técnico y análisis de sistemas. Base sólida que impulsó la transición hacia el desarrollo de software.</p>
             <div class="tech-pills">
               <span>Soporte TI</span><span>Redes</span><span>Sistemas</span>
@@ -250,211 +330,185 @@
   <section id="proyectos" class="section">
     <div class="container">
       <div class="section-header" data-reveal>
-        <p class="section-label">Portfolio</p>
-        <h2 class="section-title">Proyectos Destacados</h2>
+        <span class="section-num">03 — Proyectos</span>
+        <h2 class="section-title">Ecosistema Jokadra.</h2>
+        <p class="section-desc">Productos construidos desde cero. Algunos live, otros en desarrollo activo.</p>
       </div>
 
-      <!-- Ecosistema Jokadra -->
-      <p class="projects-group-label" data-reveal>Ecosistema Jokadra</p>
-      <div class="projects-grid" data-reveal>
+      <p class="projects-group-label" data-reveal>— Productos SaaS</p>
+      <div class="projects-list" data-reveal>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--indigo">
-            <i class="fas fa-globe"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">01</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--live">Live</span><span class="tag">Next.js</span><span class="tag">Vercel</span></div>
             <h3>Jokadra · Sitio Corporativo</h3>
-            <p>Plataforma principal de la Venture Builder. Diseño Premium Tech con Next.js, Tailwind, Framer Motion, Vercel Analytics y formulario de contacto propio.</p>
-            <a href="https://site-jkdtech.vercel.app" target="_blank" rel="noopener" class="project-link">Ver sitio <i class="fas fa-external-link-alt"></i></a>
+            <p>Plataforma principal de la Venture Builder. Next.js 14, Tailwind, Framer Motion, Vercel Analytics y formulario de contacto propio.</p>
+            <div class="project-tags">
+              <span class="tag tag--live">Live</span>
+              <span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Vercel</span>
+            </div>
           </div>
+          <a href="https://site-jkdtech.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
+            Ver sitio <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--cyan">
-            <i class="fas fa-chart-line"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">02</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--live">Live</span><span class="tag">Next.js</span><span class="tag">SaaS</span></div>
-            <h3>Financial Accelerator</h3>
-            <p>Micro-SaaS Freemium para educación financiera y aceleración de metas económicas. Dashboard con IA (Gemini), simuladores y centro de aprendizaje.</p>
-            <a href="https://financial-accelerator.vercel.app" target="_blank" rel="noopener" class="project-link">Ver sitio <i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card glass">
-          <div class="project-visual project-visual--purple">
-            <i class="fas fa-store"></i>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag tag--live">Live</span><span class="tag">Next.js</span><span class="tag">Supabase</span></div>
-            <h3>Global Hub Marketplace</h3>
-            <p>Plataforma de comercio electrónico con modelos de venta directa, afiliación y dropshipping para el mercado latinoamericano.</p>
-            <a href="https://global-hub-marketplace.vercel.app" target="_blank" rel="noopener" class="project-link">Ver sitio <i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card glass">
-          <div class="project-visual project-visual--cyan">
-            <i class="fas fa-calendar-check"></i>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag tag--live">Live</span><span class="tag">Next.js</span><span class="tag">Supabase</span></div>
             <h3>Reservix · SaaS de Reservas B2B</h3>
-            <p>Sistema de reservas online para barberías, clínicas, gimnasios y dentistas en Chile. Dashboard completo, agenda semanal, CRM de clientes y planes Free/Pro/Premium con MercadoPago.</p>
-            <a href="https://reservix-kappa.vercel.app" target="_blank" rel="noopener" class="project-link">Ver sitio <i class="fas fa-external-link-alt"></i></a>
+            <p>Sistema de reservas para barberías, clínicas y gimnasios en Chile. Dashboard completo, agenda semanal, CRM de clientes, planes Free/Pro/Premium con MercadoPago.</p>
+            <div class="project-tags">
+              <span class="tag tag--live">Live</span>
+              <span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">MercadoPago</span><span class="tag">Capacitor</span>
+            </div>
           </div>
+          <a href="https://reservix-kappa.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
+            Ver sitio <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--green">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">03</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--live">Live</span><span class="tag">Next.js</span><span class="tag">Gemini AI</span></div>
+            <h3>Financial Accelerator</h3>
+            <p>Micro-SaaS Freemium para educación financiera. Dashboard con IA (Gemini), simuladores de deudas e inversiones y centro de aprendizaje.</p>
+            <div class="project-tags">
+              <span class="tag tag--live">Live</span>
+              <span class="tag">Next.js</span><span class="tag">Gemini AI</span><span class="tag">Supabase</span>
+            </div>
+          </div>
+          <a href="https://financial-accelerator.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
+            Ver sitio <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project-row">
+          <span class="project-num">04</span>
+          <div class="project-info">
+            <h3>Global Hub Marketplace</h3>
+            <p>Plataforma e-commerce con modelos de venta directa, afiliación y dropshipping para el mercado latinoamericano.</p>
+            <div class="project-tags">
+              <span class="tag tag--live">Live</span>
+              <span class="tag">Next.js</span><span class="tag">Supabase</span>
+            </div>
+          </div>
+          <a href="https://global-hub-marketplace.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
+            Ver sitio <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project-row">
+          <span class="project-num">05</span>
+          <div class="project-info">
             <h3>Trivy Prep</h3>
             <p>Plataforma web de trivia educativa para certificaciones cloud, idiomas y más. Preguntas generadas con IA, adaptadas por edad, dificultad y país.</p>
-            <a href="https://trivy-prep.vercel.app" target="_blank" rel="noopener" class="project-link">Ver sitio <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-tags">
+              <span class="tag tag--live">Live</span>
+              <span class="tag">Next.js</span><span class="tag">Gemini AI</span>
+            </div>
           </div>
+          <a href="https://trivy-prep.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
+            Ver sitio <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--green">
-            <i class="fas fa-calendar-check"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">06</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--live">Live</span><span class="tag">Next.js</span><span class="tag">Firebase</span></div>
             <h3>Sistema de Reservas Privado</h3>
-            <p>Plataforma completa de reservas con panel admin, calendario, múltiples métodos de pago, upload de comprobantes y notificaciones por email.</p>
-            <a href="https://reservas-rho.vercel.app" target="_blank" rel="noopener" class="project-link">Ver sitio <i class="fas fa-external-link-alt"></i></a>
+            <p>Plataforma completa con panel admin, calendario, múltiples métodos de pago, upload de comprobantes y notificaciones.</p>
+            <div class="project-tags">
+              <span class="tag tag--live">Live</span>
+              <span class="tag">Next.js</span><span class="tag">Firebase</span>
+            </div>
           </div>
+          <a href="https://reservas-rho.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
+            Ver sitio <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--orange">
-            <i class="fas fa-shield-alt"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">07</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--beta">Beta</span><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Kotlin</span></div>
             <h3>Guardian AI</h3>
-            <p>Plataforma de control parental con IA para Latinoamérica. App para padres + app para hijos, bloqueo anti-evasión a nivel sistema, geofencing, gamificación y análisis de comportamiento con Gemini. Phase 14/14 completa.</p>
-            <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
+            <p>Plataforma de control parental con IA para Latinoamérica. App padres + app hijos, bloqueo anti-evasión a nivel sistema, geofencing, gamificación y análisis de comportamiento con Gemini. Phase 14/14 completa.</p>
+            <div class="project-tags">
+              <span class="tag tag--beta">Beta</span>
+              <span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Kotlin</span><span class="tag">Gemini AI</span>
+            </div>
           </div>
+          <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link-btn">
+            GitHub <i class="fab fa-github"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--green">
-            <i class="fab fa-whatsapp"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">08</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Gemini AI</span></div>
             <h3>WhatsApp AI Suite</h3>
             <p>Suite de 5 microservicios IA para WhatsApp Business: asistente conversacional, análisis de comportamiento, insights automáticos y notificaciones inteligentes para empresas LatAm.</p>
-            <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
+            <div class="project-tags">
+              <span class="tag tag--dev">En desarrollo</span>
+              <span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Gemini AI</span>
+            </div>
           </div>
+          <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link-btn">
+            GitHub <i class="fab fa-github"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--purple">
-            <i class="fas fa-wand-magic-sparkles"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">09</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">OpenAI</span></div>
-            <h3>Content Generator AI</h3>
-            <p>Plataforma B2B que genera contenido listo para Instagram, LinkedIn y TikTok. Posts, guiones para Reels, hashtags y calendario semanal automático para agencias y PYMEs.</p>
-            <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card glass">
-          <div class="project-visual project-visual--cyan">
-            <i class="fas fa-magnifying-glass-chart"></i>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Pandas</span></div>
-            <h3>Opportunity Finder AI</h3>
-            <p>Analiza tendencias (Google Trends, TikTok, Marketplace) y detecta oportunidades de negocio con potencial en el mercado local. Reporte semanal automático con scoring.</p>
-            <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card glass">
-          <div class="project-visual project-visual--orange">
-            <i class="fas fa-dollar-sign"></i>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Pandas</span></div>
-            <h3>Money Leak Detector</h3>
-            <p>Analiza gastos de negocios (CSV/Excel) y detecta suscripciones duplicadas, sobreprecios y fugas de dinero ocultas. Dashboard visual con recomendaciones de ahorro. B2B.</p>
-            <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card glass">
-          <div class="project-visual project-visual--indigo">
-            <i class="fas fa-diagram-project"></i>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Claude AI</span></div>
             <h3>DiagramAI</h3>
-            <p>Herramienta web para generar diagramas de arquitectura desde texto usando Claude y Gemini. Soporta Mermaid, C4, PlantUML, Graphviz y D2 con editor Monaco integrado.</p>
-            <a href="https://github.com/JKDTech/diagramai" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
+            <p>Genera diagramas de arquitectura desde texto con Claude y Gemini. Soporta Mermaid, C4, PlantUML, Graphviz y D2 con editor Monaco integrado.</p>
+            <div class="project-tags">
+              <span class="tag tag--dev">En desarrollo</span>
+              <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Claude AI</span>
+            </div>
           </div>
+          <a href="https://github.com/JKDTech/diagramai" target="_blank" rel="noopener" class="project-link-btn">
+            GitHub <i class="fab fa-github"></i>
+          </a>
         </div>
 
-        <div class="project-card glass">
-          <div class="project-visual project-visual--pink">
-            <i class="fas fa-robot"></i>
-          </div>
+        <div class="project-row">
+          <span class="project-num">10</span>
           <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">Flutter</span><span class="tag">IA</span></div>
             <h3>JKDTech AI Platform</h3>
             <p>Asistente inteligente con IA generativa (Gemini), streaming en tiempo real, base de conocimiento RAG y procesamiento de PDFs e imágenes.</p>
-            <a href="https://github.com/JKDTech/jkdtech_ai" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
+            <div class="project-tags">
+              <span class="tag tag--dev">En desarrollo</span>
+              <span class="tag">Flutter</span><span class="tag">Gemini AI</span><span class="tag">RAG</span>
+            </div>
           </div>
-        </div>
-
-        <div class="project-card glass">
-          <div class="project-visual project-visual--pink">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag tag--dev">Desarrollo</span><span class="tag">Flutter</span><span class="tag">Android</span></div>
-            <h3>TriviaApp</h3>
-            <p>Aplicación móvil de trivia y entretenimiento con categorías dinámicas, ranking y modo multijugador. Desarrollada en Flutter.</p>
-            <a href="https://github.com/JKDTech/Proyecto_TriviaApp" target="_blank" rel="noopener" class="project-link">GitHub <i class="fab fa-github"></i></a>
-          </div>
+          <a href="https://github.com/JKDTech/jkdtech_ai" target="_blank" rel="noopener" class="project-link-btn">
+            GitHub <i class="fab fa-github"></i>
+          </a>
         </div>
 
       </div>
 
       <!-- Proyectos profesionales -->
-      <p class="projects-group-label" data-reveal>Proyectos Profesionales</p>
-      <div class="projects-grid projects-grid--sm" data-reveal>
-
-        <div class="project-card project-card--sm glass">
-          <div class="project-visual project-visual--indigo project-visual--sm">
-            <i class="fab fa-java"></i>
+      <p class="projects-group-label" data-reveal>— Proyectos profesionales (Amaris)</p>
+      <div class="projects-grid--sm" data-reveal>
+        <div class="project-card--sm">
+          <div class="project-tags" style="margin-bottom:10px">
+            <span class="tag">Quarkus</span><span class="tag">Backend</span>
           </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Quarkus</span><span class="tag">Backend</span></div>
-            <h3>Quarkus Document Compressor</h3>
-            <p>API de compresión de documentos con Quarkus para flujos empresariales de alto volumen.</p>
-          </div>
+          <h3>Quarkus Document Compressor</h3>
+          <p>API de compresión de documentos con Quarkus para flujos empresariales de alto volumen.</p>
         </div>
-
-        <div class="project-card project-card--sm glass">
-          <div class="project-visual project-visual--cyan project-visual--sm">
-            <i class="fas fa-paper-plane"></i>
+        <div class="project-card--sm">
+          <div class="project-tags" style="margin-bottom:10px">
+            <span class="tag">NestJS</span><span class="tag">Backend</span>
           </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">NestJS</span><span class="tag">Backend</span></div>
-            <h3>SendMeApp Backend</h3>
-            <p>Backend NestJS para plataforma de mensajería y notificaciones con arquitectura de microservicios.</p>
-          </div>
+          <h3>SendMeApp Backend</h3>
+          <p>Backend NestJS para plataforma de mensajería y notificaciones con arquitectura de microservicios.</p>
         </div>
-
       </div>
+
     </div>
   </section>
 
@@ -462,62 +516,88 @@
   <section id="habilidades" class="section section--alt">
     <div class="container">
       <div class="section-header" data-reveal>
-        <p class="section-label">Stack técnico</p>
-        <h2 class="section-title">Habilidades</h2>
+        <span class="section-num">04 — Habilidades</span>
+        <h2 class="section-title">Stack técnico.</h2>
       </div>
 
-      <div class="skills-layout">
-        <!-- Skill bars -->
-        <div class="skills-bars" data-reveal>
-          <div class="skill-bar">
-            <div class="skill-bar-header"><span>Java · Spring Boot · Quarkus</span><span class="skill-pct">92%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-header"><span>Flutter · Dart · Android</span><span class="skill-pct">85%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-header"><span>Angular · TypeScript · Next.js</span><span class="skill-pct">80%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-header"><span>GCP · Kubernetes · Docker</span><span class="skill-pct">78%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-header"><span>IA · LLMs · OpenAI · Gemini</span><span class="skill-pct">75%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-header"><span>SQL · PostgreSQL · Firebase</span><span class="skill-pct">82%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+      <div class="skills-groups" data-reveal>
+        <div class="skill-group">
+          <span class="sg-label">Backend</span>
+          <div class="sg-pills">
+            <span class="sg-pill sg-pill--strong">Java</span>
+            <span class="sg-pill sg-pill--strong">Quarkus</span>
+            <span class="sg-pill sg-pill--strong">Spring Boot</span>
+            <span class="sg-pill">Microservicios</span>
+            <span class="sg-pill">REST APIs</span>
+            <span class="sg-pill">NestJS</span>
+            <span class="sg-pill">FastAPI</span>
           </div>
         </div>
-
-        <!-- Tech cloud -->
-        <div class="tech-cloud" data-reveal>
-          <span class="tech-pill tech-pill--lg">Java</span>
-          <span class="tech-pill tech-pill--lg">Quarkus</span>
-          <span class="tech-pill">Spring Boot</span>
-          <span class="tech-pill tech-pill--lg">Flutter</span>
-          <span class="tech-pill">Dart</span>
-          <span class="tech-pill tech-pill--lg">Angular</span>
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">Next.js</span>
-          <span class="tech-pill tech-pill--lg">GCP</span>
-          <span class="tech-pill">Kubernetes</span>
-          <span class="tech-pill">Docker</span>
-          <span class="tech-pill tech-pill--lg">OpenAI</span>
-          <span class="tech-pill">Gemini</span>
-          <span class="tech-pill">Firebase</span>
-          <span class="tech-pill">Supabase</span>
-          <span class="tech-pill tech-pill--lg">PostgreSQL</span>
-          <span class="tech-pill">SQL Server</span>
-          <span class="tech-pill">NestJS</span>
-          <span class="tech-pill">Tailwind</span>
-          <span class="tech-pill">Git</span>
-          <span class="tech-pill">CI/CD</span>
+        <div class="skill-group">
+          <span class="sg-label">Mobile</span>
+          <div class="sg-pills">
+            <span class="sg-pill sg-pill--strong">Flutter</span>
+            <span class="sg-pill sg-pill--strong">Dart</span>
+            <span class="sg-pill">Android</span>
+            <span class="sg-pill">Capacitor.js</span>
+            <span class="sg-pill">Ionic</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Frontend</span>
+          <div class="sg-pills">
+            <span class="sg-pill sg-pill--strong">Next.js</span>
+            <span class="sg-pill sg-pill--strong">Angular</span>
+            <span class="sg-pill">TypeScript</span>
+            <span class="sg-pill">React</span>
+            <span class="sg-pill">Tailwind CSS</span>
+            <span class="sg-pill">Framer Motion</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Cloud & DevOps</span>
+          <div class="sg-pills">
+            <span class="sg-pill sg-pill--strong">GCP</span>
+            <span class="sg-pill sg-pill--strong">Kubernetes</span>
+            <span class="sg-pill">Docker</span>
+            <span class="sg-pill">GitLab CI</span>
+            <span class="sg-pill">Helm</span>
+            <span class="sg-pill">GKE</span>
+            <span class="sg-pill">Pub/Sub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Bases de datos</span>
+          <div class="sg-pills">
+            <span class="sg-pill sg-pill--strong">PostgreSQL</span>
+            <span class="sg-pill sg-pill--strong">Supabase</span>
+            <span class="sg-pill">Firebase</span>
+            <span class="sg-pill">Firestore</span>
+            <span class="sg-pill">SQL Server</span>
+            <span class="sg-pill">Oracle</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">IA & LLMs</span>
+          <div class="sg-pills">
+            <span class="sg-pill sg-pill--strong">Gemini AI</span>
+            <span class="sg-pill">OpenAI</span>
+            <span class="sg-pill">RAG</span>
+            <span class="sg-pill">Claude AI</span>
+            <span class="sg-pill">Python</span>
+            <span class="sg-pill">Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Calidad</span>
+          <div class="sg-pills">
+            <span class="sg-pill">JUnit</span>
+            <span class="sg-pill">Mockito</span>
+            <span class="sg-pill">SonarQube</span>
+            <span class="sg-pill">Jacoco</span>
+            <span class="sg-pill">Jira</span>
+            <span class="sg-pill">Confluence</span>
+          </div>
         </div>
       </div>
     </div>
@@ -527,43 +607,38 @@
   <section id="certificaciones" class="section">
     <div class="container">
       <div class="section-header" data-reveal>
-        <p class="section-label">Credenciales</p>
-        <h2 class="section-title">Certificaciones</h2>
+        <span class="section-num">05 — Certificaciones</span>
+        <h2 class="section-title">Credenciales.</h2>
       </div>
       <div class="certs-grid" data-reveal>
-
-        <div class="cert-card glass">
+        <div class="cert-card">
           <div class="cert-icon cert-icon--gcp"><i class="fab fa-google"></i></div>
           <div class="cert-info">
             <h3>Google Cloud Platform</h3>
-            <p>Arquitecturas cloud, Kubernetes y servicios GCP</p>
+            <p>Arquitecturas cloud, Kubernetes y GCP</p>
           </div>
         </div>
-
-        <div class="cert-card glass">
+        <div class="cert-card">
           <div class="cert-icon cert-icon--java"><i class="fab fa-java"></i></div>
           <div class="cert-info">
             <h3>Java · Backend Development</h3>
-            <p>Spring Boot, Quarkus, microservicios y APIs REST</p>
+            <p>Spring Boot, Quarkus, microservicios</p>
           </div>
         </div>
-
-        <div class="cert-card glass">
+        <div class="cert-card">
           <div class="cert-icon cert-icon--flutter"><i class="fas fa-mobile-alt"></i></div>
           <div class="cert-info">
             <h3>Flutter · Mobile Development</h3>
-            <p>Desarrollo móvil multiplataforma iOS/Android</p>
+            <p>Desarrollo móvil multiplataforma</p>
           </div>
         </div>
-
-        <div class="cert-card glass">
+        <div class="cert-card">
           <div class="cert-icon cert-icon--ai"><i class="fas fa-robot"></i></div>
           <div class="cert-info">
             <h3>IA & Machine Learning</h3>
-            <p>LLMs, RAG, integración OpenAI y Gemini</p>
+            <p>LLMs, RAG, integración Gemini / OpenAI</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -571,14 +646,14 @@
   <!-- ========== CONTACTO ========== -->
   <section id="contacto" class="section section--alt">
     <div class="container">
-      <div class="section-header" data-reveal>
-        <p class="section-label">¿Hablamos?</p>
-        <h2 class="section-title">Contacto</h2>
-        <p class="section-desc">¿Tienes un proyecto en mente? ¿Quieres trabajar juntos? Escríbeme directamente.</p>
+      <div class="section-header section-header--center" data-reveal>
+        <span class="section-num">06 — Contacto</span>
+        <h2 class="section-title">¿Hablamos?</h2>
+        <p class="section-desc">¿Proyecto en mente? ¿Quieres trabajar juntos? Escríbeme directamente.</p>
       </div>
       <div class="contact-grid" data-reveal>
 
-        <a href="https://www.linkedin.com/in/jonathan-moya-y" target="_blank" rel="noopener" class="contact-card glass">
+        <a href="https://www.linkedin.com/in/jonathan-moya-y" target="_blank" rel="noopener" class="contact-card">
           <div class="contact-icon contact-icon--linkedin"><i class="fab fa-linkedin"></i></div>
           <div>
             <h3>LinkedIn</h3>
@@ -587,7 +662,7 @@
           <i class="fas fa-arrow-right contact-arrow"></i>
         </a>
 
-        <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="contact-card glass">
+        <a href="https://github.com/JKDTech" target="_blank" rel="noopener" class="contact-card">
           <div class="contact-icon contact-icon--github"><i class="fab fa-github"></i></div>
           <div>
             <h3>GitHub</h3>
@@ -596,7 +671,7 @@
           <i class="fas fa-arrow-right contact-arrow"></i>
         </a>
 
-        <a href="https://site-jkdtech.vercel.app/#contacto" target="_blank" rel="noopener" class="contact-card glass contact-card--highlight">
+        <a href="https://site-jkdtech.vercel.app/#contacto" target="_blank" rel="noopener" class="contact-card contact-card--highlight">
           <div class="contact-icon contact-icon--web"><i class="fas fa-paper-plane"></i></div>
           <div>
             <h3>Formulario Jokadra</h3>
@@ -605,7 +680,7 @@
           <i class="fas fa-arrow-right contact-arrow"></i>
         </a>
 
-        <a href="https://wa.me/56969076188" target="_blank" rel="noopener" class="contact-card glass">
+        <a href="https://wa.me/56969076188" target="_blank" rel="noopener" class="contact-card">
           <div class="contact-icon contact-icon--whatsapp"><i class="fab fa-whatsapp"></i></div>
           <div>
             <h3>WhatsApp</h3>

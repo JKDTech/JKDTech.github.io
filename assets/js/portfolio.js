@@ -1,5 +1,5 @@
 /* =========================================
-   JKDTech GitHub.io — Portfolio JS
+   Jonathan Moya — Portfolio JS
    ========================================= */
 
 /* ---- Navbar scroll effect ---- */
@@ -11,9 +11,7 @@ window.addEventListener('scroll', () => {
 /* ---- Mobile menu toggle ---- */
 const navToggle = document.getElementById('navToggle');
 const navMenu   = document.getElementById('navMenu');
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
-});
+navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
 navMenu.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => navMenu.classList.remove('open'));
 });
@@ -22,55 +20,41 @@ navMenu.querySelectorAll('.nav-link').forEach(link => {
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      setTimeout(() => entry.target.classList.add('visible'), i * 70);
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
 
 /* ---- Typing animation ---- */
 const titles = [
   'Software Engineer Experience Consultant',
-  'Fundador de JKD Tech',
+  'Fundador de Jokadra',
   'Java & Quarkus Specialist',
   'Flutter Developer',
-  'Venture Builder',
+  'Venture Builder · Santiago, Chile',
 ];
 let titleIdx = 0, charIdx = 0, isDeleting = false;
 const typingEl = document.getElementById('typingText');
 
 function typeLoop() {
+  if (!typingEl) return;
   const current = titles[titleIdx];
   if (isDeleting) {
     charIdx--;
     typingEl.textContent = current.slice(0, charIdx);
     if (charIdx === 0) { isDeleting = false; titleIdx = (titleIdx + 1) % titles.length; }
-    setTimeout(typeLoop, 60);
+    setTimeout(typeLoop, 50);
   } else {
     charIdx++;
     typingEl.textContent = current.slice(0, charIdx);
-    if (charIdx === current.length) { isDeleting = true; setTimeout(typeLoop, 1800); }
-    else { setTimeout(typeLoop, 80); }
+    if (charIdx === current.length) { isDeleting = true; setTimeout(typeLoop, 2000); }
+    else { setTimeout(typeLoop, 75); }
   }
 }
 typeLoop();
-
-/* ---- Skill bars animate on reveal ---- */
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
-        bar.style.width = bar.dataset.pct + '%';
-      });
-      skillObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
-
-const skillsSection = document.querySelector('.skills-bars');
-if (skillsSection) skillObserver.observe(skillsSection);
 
 /* ---- Active nav link on scroll ---- */
 const sections = document.querySelectorAll('section[id]');
