@@ -80,7 +80,7 @@ img { max-width: 100%; }
   letter-spacing: -0.02em;
 }
 .nav-logo-img {
-  height: 120px;
+  height: 56px;
   width: auto;
   display: block;
   /* El logo ya tiene fondo negro — blend-mode lo fusiona con el navbar */
@@ -769,7 +769,7 @@ img { max-width: 100%; }
 }
 .footer-brand { display: flex; align-items: center; gap: 12px; }
 .footer-logo-img {
-  height: 120px;
+  height: 56px;
   width: auto;
   display: block;
   mix-blend-mode: screen;
@@ -816,10 +816,12 @@ img { max-width: 100%; }
 }
 
 @media (max-width: 768px) {
+  .nav-container { height: 64px; }
+  .nav-logo-img  { height: 40px; }
   .nav-menu {
     display: none;
     position: fixed;
-    top: 60px; left: 0; right: 0;
+    top: 64px; left: 0; right: 0;
     background: rgba(8,9,12,0.97);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
@@ -834,6 +836,7 @@ img { max-width: 100%; }
   .section { padding: 72px 0; }
   .project-row { grid-template-columns: 28px 1fr; }
   .project-link-btn { display: none; }
+  .footer-logo-img { height: 44px; }
 }
 
 @media (max-width: 480px) {
