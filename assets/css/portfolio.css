@@ -80,12 +80,13 @@ img { max-width: 100%; }
   letter-spacing: -0.02em;
 }
 .nav-logo-img {
-  height: 56px;
+  height: 100px;
   width: auto;
+  max-width: 260px;
   display: block;
-  /* El logo ya tiene fondo negro — blend-mode lo fusiona con el navbar */
+  /* El logo tiene mucho whitespace interno — se compensa con mayor height */
   mix-blend-mode: screen;
-  opacity: 0.92;
+  opacity: 0.95;
   transition: opacity var(--t);
 }
 .nav-logo:hover .nav-logo-img { opacity: 1; }
@@ -253,13 +254,20 @@ img { max-width: 100%; }
   border-radius: 12px;
   overflow: hidden;
   line-height: 0;
+  /* Limitar el alto del logo para que no ocupe todo el widget */
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-logo-img {
   width: 100%;
   height: auto;
+  max-height: 200px;
+  object-fit: contain;
   display: block;
   mix-blend-mode: screen;
-  filter: brightness(1.05);
+  filter: brightness(1.1);
 }
 
 /* Hero widget — panel derecho */
@@ -769,11 +777,12 @@ img { max-width: 100%; }
 }
 .footer-brand { display: flex; align-items: center; gap: 12px; }
 .footer-logo-img {
-  height: 56px;
+  height: 100px;
   width: auto;
+  max-width: 280px;
   display: block;
   mix-blend-mode: screen;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 .footer-name { font-size: 14px; font-weight: 700; }
 .footer-sub  { font-size: 11px; color: var(--text-3); font-family: 'Courier New', monospace; }
@@ -816,12 +825,12 @@ img { max-width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .nav-container { height: 64px; }
-  .nav-logo-img  { height: 40px; }
+  .nav-container { height: 72px; }
+  .nav-logo-img  { height: 72px; max-width: 200px; }
   .nav-menu {
     display: none;
     position: fixed;
-    top: 64px; left: 0; right: 0;
+    top: 72px; left: 0; right: 0;
     background: rgba(8,9,12,0.97);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
@@ -832,11 +841,11 @@ img { max-width: 100%; }
   .nav-menu.open { display: flex; }
   .nav-link { padding: 10px 12px; width: 100%; }
   .nav-toggle { display: flex; }
-  .hero { padding: 90px 24px 60px; }
+  .hero { padding: 96px 24px 60px; }
   .section { padding: 72px 0; }
   .project-row { grid-template-columns: 28px 1fr; }
   .project-link-btn { display: none; }
-  .footer-logo-img { height: 44px; }
+  .footer-logo-img { height: 72px; max-width: 220px; }
 }
 
 @media (max-width: 480px) {
